@@ -39,8 +39,28 @@ searchBtn.pack()
 output_box = Text(mainWin, width=28, height=10, wrap=WORD, bg='mint cream', font=("Times", "10"))
 output_box.pack()
 
+
+stop = False
+while stop == False:
+    input1 = input("would you like to edit database? ")
+    if input1 == 'no':
+        input1 = input("How about now? ")
+    elif input1 == 'y' or 'yes':
+        inputy = input("would you like to add, delete, or change an item? ")
+        if inputy == 'add':
+            pass
+        elif inputy == 'delete':
+            pass
+        elif inputy == 'change':
+            pass
+        else:
+            print('false input')
+  
+
+
 mainWin.config(menu = mainMenu)
 #mainWin.iconify() #UNHASH THIS CODE WHEN DONE
 mainWin.mainloop()
+
 
 
